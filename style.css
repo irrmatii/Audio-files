@@ -11,7 +11,8 @@ body{
 .container{
     width: 700px;
     height: 300px;
-    border: 2px solid mediumpurple;
+    border: 2px solid rgba(232, 36, 36, 0.87);
+    border-radius: 10px;
 }
 
 .inner_container{
@@ -21,7 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    color: rebeccapurple;
+    color: rgba(232, 36, 36, 0.87);
 }
 
 .inner_container_2{
@@ -40,12 +41,15 @@ body{
 }
 
 .audio_box{
-    width: 200px;
-    height: 80px;
+    width: 100px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rebeccapurple;
+    color: rgba(190, 60, 60, 0.87);
+    border: 2px solid rgba(232, 36, 36, 0.87);
+    font-size: 20px;
+    border-radius: 10px;
 }
 
 .color{
