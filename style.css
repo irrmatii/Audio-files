@@ -1,20 +1,27 @@
 
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
     margin: 50px;
 }
 
 .container{
     width: 700px;
-    height: 400px;
+    height: 300px;
     border: 2px solid mediumpurple;
 }
 
 .inner_container{
     width: 100%;
-    height: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rebeccapurple;
 }
 
 .inner_container_2{
@@ -43,4 +50,13 @@ body{
 
 .color{
     color: mediumpurple;
+}
+
+.video_box{
+    width: 220px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rebeccapurple;
 }
