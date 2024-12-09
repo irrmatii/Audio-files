@@ -1,79 +1,33 @@
-const playBtn = document.querySelectorAll("svg") as NodeListOf<SVGElement>;
-const audio = document.querySelectorAll("audio");
-const video = document.querySelectorAll("video");
+const posts_container = document.querySelector(".posts_container") as HTMLDivElement
 
-
-
-playBtn[0].onclick = () => {
-    console.log("clicked")
-    audio[0].play()
-    audio[1].pause()
-    audio[2].pause()
-}
-
-playBtn[0].ondblclick = () => {
-    console.log("DBLclicked")
-    audio[0].pause()
-}
-
-playBtn[1].onclick = () => {
-    console.log("clicked")
-    audio[1].play()
-    audio[0].pause()
-    audio[2].pause()
-}
-
-playBtn[1].ondblclick = () => {
-    console.log("DBLclicked")
-    audio[1].pause()
-}
-
-playBtn[2].onclick = () => {
-    console.log("clicked")
-    audio[2].play()
-    audio[0].pause()
-    audio[1].pause()
-}
-
-playBtn[2].ondblclick = () => {
-    console.log("DBLclicked")
-    audio[2].pause()
+interface Post{
+    id: number,
+    title: string,
+    body: string
 }
 
 
-// VIDEOS
-playBtn[3].onclick = () => {
-    console.log("clicked")
-    video[0].play()
-    video[1].pause()
-    video[2].pause()
-}
+// fetch("https://jsonplaceholder.typicode.com/posts")
+//     .then(res => res.json())
+//     .then(data => {
+//
+//         console.log(data)
+//
+//         posts_container.innerHTML = `
+//         <div class="posts">
+//         <h3> Nr ${data.id}</h3>
+//         <h3> Title: ${data.title}</h3>
+//         <p>${data.body}</p>
+//         </div>
+//         `
+//
+//     })
 
-playBtn[4].onclick = () => {
-    console.log("clicked")
-    video[1].play()
-    video[0].pause()
-    video[2].pause()
-}
 
-playBtn[5].onclick = () => {
-    console.log("clicked")
-    video[2].play()
-    video[1].pause()
-    video[0].pause()
-}
 
-playBtn[3].ondblclick = () => {
-    console.log("DBLclicked")
-    video[0].pause()
-}
 
-playBtn[4].ondblclick = () => {
-    console.log("DBLclicked")
-    video[1].pause()
-}
 
-playBtn[5].ondblclick = () => {
-    console.log("DBLclicked")
-    video[2].pause()
-}
+
+
+
+
